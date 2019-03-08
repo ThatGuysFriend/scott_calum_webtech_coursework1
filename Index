@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="rot13.css">
+		<title >Encrpyt and Decrypt</title>
+	</head >
+	<body >
+		<h1>Hide your secret messages by encrypting them</h1>
+		<p>ROT13 is an encryption technique that will change the letter by 13 places to the right of the alphabet 
+		   The Scrambler will change the letters so that it is swaped with a predetermined letter 
+		   The Numberise will convert the letters to numbers </p>
+
+		<div id="input_area">
+		
+			<textarea rows="1" cols="50" autofocus id="message">Type your message here</textarea>
+			<button type="button" onclick="ROT13()" id="ROT13_button">ROT13</button>
+			<button type="button" onclick="Scramble_Encode()" id="Scrambler">Scramble</button>
+			<button type="button" onclick="Scramble_Decode()" id="Descrambler">Descramble</button>
+			<button type="button" onclick="Number_Encode()" id="Numberise">Numberise</button>
+			<button type="button" onclick="Number_Decode()" id="Denumberise">Denumberise</button>
+		</div>
+
+		<div id="output_area">
+			<p>
+			Your message:<br/>
+			<div id="output"></div>
+			</p>
+		<div>
+		<script type="text/javascript" src="rot13.js"></script>
+	</body>
+</htmL>
